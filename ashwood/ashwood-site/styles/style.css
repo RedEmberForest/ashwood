@@ -166,11 +166,16 @@ main {
     font-size: 1.2rem;
 }
 
+.button:hover {
+    background-color: var(--section-background);
+}
+
 #about-section {
     background-color: var(--section-background);
     color: var(--section-text-color);
     font-family: var(--body-font);
     border-top: 2px solid black;
+    border-bottom: 2px solid black;
     position: relative;
 }
 
@@ -197,10 +202,7 @@ main {
     color: var(--section-text-color);
     font-family: var(--body-font);
     padding: 1.2rem 2rem;
-    border-bottom: 2px solid black;
     height: 14rem;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
 }
 
 #review-stars {
@@ -278,21 +280,13 @@ main {
     padding: 2rem;
 }
 
-#schedule-lesson a {
-    font-size: 1.5rem;
-    background-color: var(--header-background);
-    color: var(--body-background);
-    border: 2px solid black;
-    padding: .7rem 2rem;
-    border-radius: 5px;
-}
-
 .company-name {
     background-color: var(--header-background);
     color: var(--header-text-color);
     font-family: var(--header-font);
     padding: 3rem;
     text-align: center;
+    border-bottom: 2px solid black;
 }
 
 #contact-info {
@@ -316,6 +310,7 @@ address {
     font-family: var(--header-font);
     padding: 2rem;
     margin: 0 auto;
+    overflow-wrap: anywhere;
 }
 
 .info h2 {
@@ -324,92 +319,15 @@ address {
 }
 
 .info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     padding: 1rem;
+    margin-left: -2rem;
 }
 
 #contact-info iframe {
     display: none;
 }
-
-form {
-    color: var(--body-text-color);
-    font-family: var(--header-font);
-    font-size: 1.2rem;
-    display: grid;
-    padding: 0 6rem 0 3rem;
-}
-
-.column1 {
-    grid-template-columns: 1fr 2fr;
-}
-
-.column2 {
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: left;
-}
-
-.column3 {
-    display: flex;
-    padding: .6rem 0;
-    font-size: .98rem;
-    align-items: center;
-}
-
-.column3 input {
-    padding: .4rem;
-}
-
-.column3 label {
-    width: 100%;
-}
-
-.select {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    margin: 1rem 0;
-}
-
-.select p {
-    padding: 0;
-    margin: 0;
-}
-
-.formitem {
-    display: grid;
-    align-items: center;
-}
-
-input,
-textarea {
-    border: 2px solid gray;
-    border-radius: .2rem;
-    padding: .4rem .5rem;
-    font-size: 1rem;
-    margin: .2rem;
-}
-
-textarea {
-    margin: 0;
-    height: 5rem;
-}
-
-#submit {
-    padding: .4rem;
-    font-size: 1rem;
-    border-radius: .2rem;
-    border: 2px solid gray;
-}
-
-#submit:hover {
-    cursor: pointer;
-    background-color: #bbb
-}
-
 
 footer {
     margin-top: .3rem;

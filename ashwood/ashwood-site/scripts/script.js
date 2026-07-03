@@ -8,7 +8,3 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 })
-
-let visitCounter = parseInt(localStorage.getItem("visitCounter")) || 0;
-visitCounter += 1
-localStorage.setItem("visitCounter", visitCounter);

@@ -110,6 +110,7 @@
     #info-text {
         width: 50%;
         margin: auto;
+        overflow-wrap: normal;
     }
 
     .info {
@@ -117,6 +118,7 @@
         justify-content: space-between;
         width: 100%;
         align-items: baseline;
+        margin: 0 auto;
     }
 
     #contact-info iframe {
