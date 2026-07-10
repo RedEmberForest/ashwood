@@ -394,3 +394,47 @@ footer>div {
 #packwalk-img {
     width: 100%;
 }
+
+#error-container {
+    display: block;
+}
+
+#error-img {
+    width: 100%;
+}
+
+#error {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--header-background);
+    font-family: var(--header-font);
+}
+
+#error-msg {
+    font-family: var(--body-font);
+    color: var(--footer-background);
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+#return-button {
+    display: flex;
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-size: 1.5rem;
+    align-items: center;
+    background-color: var(--header-background);
+    font-family: var(--header-font);
+    padding: 1rem;
+    width: 45%;
+    justify-content: center;
+    margin-left: 26%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#error-msg-container {
+    padding: 2rem;
+}
